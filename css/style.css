@@ -6,9 +6,27 @@
 
 [class*="col-"] {
     border: 1px solid #000;
-    height: 200px;
+    height: 200;
+    text-align: center;
+    line-height: 200px;
 }
 
 .container {
-    background-color: pink;    
+    background-color: pink;
+    height: 200px;
+}
+
+.container:last-child {
+    height:  100%;
+}
+
+
+.container:last-child > div {
+    padding: 5px;
+}
+
+[class*="col-"] > .container > [class*="col-"] {
+    background-color: lightcoral;
+    border-color: #fff;
+
 }
